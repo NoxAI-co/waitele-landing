@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900">
@@ -18,28 +20,28 @@ export default function Home() {
             
             {/* Navegación Elegante */}
             <nav className="hidden lg:flex items-center space-x-6">
-              <a href="/" className="text-blue-400 font-medium px-3 py-2 rounded-md bg-gray-800">
+              <Link href="/" className="text-blue-400 font-medium px-3 py-2 rounded-md bg-gray-800">
                 Inicio
-              </a>
-              <a href="/planes" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/planes" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Planes
-              </a>
-              <a href="/sobre-nosotros" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/sobre-nosotros" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Sobre Nosotros
-              </a>
-              <a href="/contacto" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/contacto" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Contacto
-              </a>
-              <a href="/pqrs" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/pqrs" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 PQRS
-              </a>
-              <a href="/normativas" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/normativas" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Normativas
-              </a>
+              </Link>
               <div className="h-4 w-px bg-gray-600"></div>
-              <a href="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+              <Link href="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                 Contáctanos
-              </a>
+              </Link>
             </nav>
 
             {/* Menú móvil */}
@@ -75,7 +77,7 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <Link 
                 href="/planes"
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/25 group"
               >
@@ -83,13 +85,13 @@ export default function Home() {
                 <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/contacto"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-600 hover:border-blue-500 hover:text-blue-400 text-gray-300 font-semibold rounded-lg transition-all duration-300 hover:bg-gray-800"
               >
                 Contáctanos
-              </a>
+              </Link>
             </div>
           </div>
         </div>

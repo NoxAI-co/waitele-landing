@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function PQRSPage() {
   return (
     <div className="min-h-screen bg-gray-900">
@@ -13,33 +15,33 @@ export default function PQRSPage() {
                 <div className="wifi-bar-3 w-1 h-4 bg-blue-400 rounded-full"></div>
                 <div className="wifi-bar-4 w-1 h-5 bg-blue-400 rounded-full"></div>
               </div>
-              <a href="/" className="text-xl font-semibold text-white">WAITELE</a>
+              <Link href="/" className="text-xl font-semibold text-white">WAITELE</Link>
             </div>
             
             {/* Navegación */}
             <nav className="hidden lg:flex items-center space-x-6">
-              <a href="/" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              <Link href="/" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Inicio
-              </a>
-              <a href="/planes" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/planes" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Planes
-              </a>
-              <a href="/sobre-nosotros" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/sobre-nosotros" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Sobre Nosotros
-              </a>
-              <a href="/contacto" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/contacto" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Contacto
-              </a>
-              <a href="/pqrs" className="text-blue-400 font-medium px-3 py-2 rounded-md bg-gray-800">
+              </Link>
+              <Link href="/pqrs" className="text-blue-400 font-medium px-3 py-2 rounded-md bg-gray-800">
                 PQRS
-              </a>
-              <a href="/normativas" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
+              </Link>
+              <Link href="/normativas" className="text-gray-300 hover:text-blue-400 font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-800">
                 Normativas
-              </a>
+              </Link>
               <div className="h-4 w-px bg-gray-600"></div>
-              <a href="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+              <Link href="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                 Contáctanos
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
